@@ -4,30 +4,32 @@ This repository contains the Duet3D Mini 5+ configuration for my HyperCube Evolu
 
 ## Connector layout
 
-| Connector | Description               |
-| --------- | ------------------------- |
-| TEMP 0    | Hotend                    |
-| TEMP 1    | Bed                       |
-| IO_0      | X-axis endstop            |
-| IO_1      | Y-axis endstop            |
-| IO_2      | Z-axis endstop            |
-| OUT 0     | Bed                       |
-| OUT 1     | Hotend                    |
-| OUT 5     | Fan hotend                |
-| OUT 6     | Part cooling fan          |
-| Driver 0  | X-axis steppen motor      |
-| Driver 1  | Y-axis steppen motor      |
-| Driver 2  | Z-axis steppen motor      |
-| Driver 4  | Extruder steppen motor    |
+| Description               | Connector |
+| ------------------------- | --------- |
+| Hotend                    | TEMP 0    |
+| Bed                       | TEMP 1    |
+| X-axis endstop            | IO_0      |
+| Y-axis endstop            | IO_1      |
+| Z-axis endstop            | IO_2      |
+| Bed                       | OUT 0     |
+| Hotend                    | OUT 1     |
+| Fan hotend                | OUT 5     |
+| Part cooling fan          | OUT 6     |
+| X-axis steppen motor      | Driver 0  |
+| Y-axis steppen motor      | Driver 1  |
+| Z-axis steppen motor      | Driver 2  |
+| Extruder steppen motor    | Driver 4  |
 
 ## Pin layout
 
 ### Endstop
 
-| Pin       | Description   |
-| --------- | ------------- |
-| 5V_EXT    | Power  (V)    |
-| GND       | Ground (G)    |
-| io0.in    | Signal (S)    |
+| Description   | Pin       |
+| ------------- | --------- |
+| Power  (V)    | 3.3V_EXT  |
+| Ground (G)    | GND       |
+| Signal (S)    | io.in     |
 
+## Font
+The font used is called Play from Google Fonts.
 
