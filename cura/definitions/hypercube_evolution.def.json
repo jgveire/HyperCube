@@ -1,14 +1,15 @@
 {
     "version": 2,
     "name": "HyperCube Evolution",
+    "inherits": "fdmprinter",
     "metadata": {
         "visible": true,
         "author": "HyperCube",
         "manufacturer": "HyperCube",
         "weight": 3,
         "file_formats": "text/x-gcode",
-        "platform": "hypecube_evolution.stl",
-        "platform_texture": "hypecube_evolution.png",
+        "platform": "hypercube_evolution.stl",
+        "platform_texture": "hypercube_evolution.png",
         "platform_offset": [18.5, 11, 0],
         "has_materials": false,
         "has_machine_quality": false,
@@ -58,10 +59,11 @@
             "default_value": true
         },
         "machine_gcode_flavor": {
-            "default_value": "UltiGCode"
+            "default_value": "RepRap (RepRap)"
         },
         "machine_disallowed_areas": {
-            "default_value": [},
+            "default_value": []
+        },
         "machine_nozzle_tip_outer_diameter": {
             "default_value": 1
         },

@@ -30,6 +30,16 @@ This repository contains the Duet3D Mini 5+ configuration for my HyperCube Evolu
 | Ground (G)    | GND       |
 | Signal (S)    | io.in     |
 
+### BLTouch
+
+| Description   | Pin       |
+| ------------- | --------- |
+| GND           | GND       |
+| +5V           | 5V_EXT    |
+| Control       | io.in     |
+| GND           | GND       |
+| Out           | io.out    |
+
 ## Font
 The font used is called Play from Google Fonts.
 
