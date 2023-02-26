@@ -1,118 +1,304 @@
 {
-    "version": 2,
     "name": "HyperCube Evolution",
+    "version": 2,
     "inherits": "fdmprinter",
-    "metadata": {
+    "metadata":
+	{
         "visible": true,
         "author": "HyperCube",
         "manufacturer": "HyperCube",
-        "weight": 3,
         "file_formats": "text/x-gcode",
+        "preferred_quality_type": "normal",
+        "has_machine_quality": true,
+        "has_materials": true,
+        "has_variants": true,
+        "variants_name": "Extruder 1",
+        "preferred_variant_name": "0.40mm",
+        "machine_extruder_trains": { "0": "hypercube_evolution_extruder" },
+        "preferred_material": "generic_pla",
         "platform": "hypercube_evolution.stl",
         "platform_texture": "hypercube_evolution.png",
-        "platform_offset": [18.5, 11, 0],
-        "has_materials": false,
-        "has_machine_quality": false,
-        "preferred_variant_name": "0.4 mm",
-        "machine_extruder_trains":
-        {
-            "0": "hypercube_evolution_extruder"
-        },
-        "exclude_materials": [ "generic_hips", "structur3d_dap100silicone" ]
+        "platform_offset": [0, 0, 0],
+		"exclude_materials": [
+			"3D-Fuel_PLA_PRO_Black",
+            "3D-Fuel_PLA_SnapSupport",
+            "bestfilament_abs_skyblue",
+            "bestfilament_petg_orange",
+            "bestfilament_pla_green",
+            "chromatik_pla",
+            "dsm_arnitel2045_175",
+            "dsm_novamid1070_175",
+            "emotiontech_abs",
+            "emotiontech_absx",
+            "emotiontech_acetate",
+            "emotiontech_asax",
+            "emotiontech_bvoh",
+            "emotiontech_copa",
+            "emotiontech_hips",
+            "emotiontech_nylon_1030",
+            "emotiontech_nylon_1030cf",
+            "emotiontech_nylon_1070",
+            "emotiontech_pc",
+            "emotiontech_pekk",
+            "emotiontech_petg",
+            "emotiontech_pla",
+            "emotiontech_pla_hr_870",
+            "emotiontech_pva-m",
+            "emotiontech_pva-s",
+            "emotiontech_tpu98a",
+            "eryone_petg",
+            "eryone_pla",
+            "eryone_pla_glow",
+            "eryone_pla_matte",
+            "eryone_pla_wood",
+            "eSUN_PETG_Black",
+            "eSUN_PETG_Grey",
+            "eSUN_PETG_Purple",
+            "eSUN_PLA_PRO_Black",
+            "eSUN_PLA_PRO_Grey",
+            "eSUN_PLA_PRO_Purple",
+            "eSUN_PLA_PRO_White",
+            "Extrudr_GreenTECPro_Anthracite_175",
+            "Extrudr_GreenTECPro_Black_175",
+            "Extrudr_GreenTECPro_Blue_175",
+            "Extrudr_GreenTECPro_Nature_175",
+            "Extrudr_GreenTECPro_Red_175",
+            "Extrudr_GreenTECPro_Silver_175",
+            "Extrudr_GreenTECPro_White_175",
+            "fabtotum_abs",
+            "fabtotum_nylon",
+            "fabtotum_pla",
+            "fabtotum_tpu",
+            "fdplast_abs_tomato",
+            "fdplast_petg_gray",
+            "fdplast_pla_olive",
+            "fiberlogy_hd_pla",
+            "filo3d_pla",
+            "filo3d_pla_green",
+            "filo3d_pla_red",
+            "goofoo_abs",
+            "goofoo_asa",
+            "goofoo_bronze_pla",
+            "goofoo_emarble_pla",
+            "goofoo_esilk_pla",
+            "goofoo_hips",
+            "goofoo_pa",
+            "goofoo_pa_cf",
+            "goofoo_pc",
+            "goofoo_peek",
+            "goofoo_petg",
+            "goofoo_pla",
+            "goofoo_pva",
+            "goofoo_tpe_83a",
+            "goofoo_tpu_87a",
+            "goofoo_tpu_95a",
+            "goofoo_wood_pla",
+            "imade3d_petg_175",
+            "imade3d_pla_175",
+            "innofill_innoflex60_175",
+            "layer_one_black_pla",
+            "layer_one_dark_gray_pla",
+            "layer_one_white_pla",
+            "leapfrog_abs_natural",
+            "leapfrog_epla_natural",
+            "leapfrog_pva_natural",
+            "octofiber_pla",
+            "polyflex_pla",
+            "polymax_pla",
+            "polyplus_pla",
+            "polywood_pla",
+            "redd_abs",
+            "redd_asa",
+            "redd_hips",
+            "redd_nylon",
+            "redd_petg",
+            "redd_pla",
+            "redd_tpe",
+            "structur3d_dap100silicone",
+            "tizyx_abs",
+            "tizyx_flex",
+            "tizyx_petg",
+            "tizyx_pla",
+            "tizyx_pla_bois",
+            "tizyx_pva",
+            "ultimaker_abs_black",
+            "ultimaker_abs_blue",
+            "ultimaker_abs_green",
+            "ultimaker_abs_grey",
+            "ultimaker_abs_orange",
+            "ultimaker_abs_pearl-gold",
+            "ultimaker_abs_red",
+            "ultimaker_abs_silver-metallic",
+            "ultimaker_abs_white",
+            "ultimaker_abs_yellow",
+            "ultimaker_bam",
+            "ultimaker_cpe_black",
+            "ultimaker_cpe_blue",
+            "ultimaker_cpe_dark-grey",
+            "ultimaker_cpe_green",
+            "ultimaker_cpe_light-grey",
+            "ultimaker_cpe_plus_black",
+            "ultimaker_cpe_plus_transparent",
+            "ultimaker_cpe_plus_white",
+            "ultimaker_cpe_red",
+            "ultimaker_cpe_transparent",
+            "ultimaker_cpe_white",
+            "ultimaker_cpe_yellow",
+            "ultimaker_nylon_black",
+            "ultimaker_nylon_transparent",
+            "ultimaker_pc_black",
+            "ultimaker_pc_transparent",
+            "ultimaker_pc_white",
+            "ultimaker_petg_black",
+            "ultimaker_petg_blue",
+            "ultimaker_petg_blue_translucent",
+            "ultimaker_petg_green",
+            "ultimaker_petg_green_translucent",
+            "ultimaker_petg_grey",
+            "ultimaker_petg_orange",
+            "ultimaker_petg_red",
+            "ultimaker_petg_red_translucent",
+            "ultimaker_petg_silver",
+            "ultimaker_petg_transparent",
+            "ultimaker_petg_white",
+            "ultimaker_petg_yellow",
+            "ultimaker_petg_yellow_fluorescent",
+            "ultimaker_pla_black",
+            "ultimaker_pla_blue",
+            "ultimaker_pla_green",
+            "ultimaker_pla_magenta",
+            "ultimaker_pla_orange",
+            "ultimaker_pla_pearl-white",
+            "ultimaker_pla_red",
+            "ultimaker_pla_silver-metallic",
+            "ultimaker_pla_transparent",
+            "ultimaker_pla_white",
+            "ultimaker_pla_yellow",
+            "ultimaker_pp_transparent",
+            "ultimaker_pva",
+            "ultimaker_tough_pla_black",
+            "ultimaker_tough_pla_green",
+            "ultimaker_tough_pla_red",
+            "ultimaker_tough_pla_white",
+            "ultimaker_tpu_black",
+            "ultimaker_tpu_blue",
+            "ultimaker_tpu_red",
+            "ultimaker_tpu_white",
+            "verbatim_bvoh_175",
+            "Vertex_Delta_ABS",
+            "Vertex_Delta_PET",
+            "Vertex_Delta_PLA",
+            "Vertex_Delta_PLA_Glitter",
+            "Vertex_Delta_PLA_Mat",
+            "Vertex_Delta_PLA_Satin",
+            "Vertex_Delta_PLA_Wood",
+            "Vertex_Delta_TPU",
+            "volumic_abs_ultra",
+            "volumic_arma_ultra",
+            "volumic_asa_ultra",
+            "volumic_br80_ultra",
+            "volumic_bumper_ultra",
+            "volumic_cu80_ultra",
+            "volumic_flex93_ultra",
+            "volumic_medical_ultra",
+            "volumic_nylon_ultra",
+            "volumic_pekk_carbone",
+            "volumic_petgcarbone_ultra",
+            "volumic_petg_ultra",
+            "volumic_pla_ultra",
+            "volumic_pp_ultra",
+            "volumic_strong_ultra",
+            "volumic_support_ultra",
+            "zyyx_pro_flex",
+            "zyyx_pro_pla"
+		]
     },
-    "overrides": {
-        "machine_name": { "default_value": "HyperCube Evolution" },
-        "machine_start_gcode" : {
-            "value": "G28 ; Home\nG1 X0 Y0 F6000 ; Move x and y\nG1 Z20 F6000 ; Move the platform down 20mm\n\n; Clean nozzel\nG92 E0\nG1 X1 Y117 Z0.1 F3600\nG1 Y19 E10 F1200\nG1 Z1.0\nG92 E0\nG1 E-1"
-        },
-        "machine_end_gcode" : {
-            "value": "M104 S0\nM140 S0\n;Retract the filament\nG92 E1\nG1 E-5 F300\nG28\nM84"
-        },
-        "machine_width": {
-            "default_value": 190
-        },
-        "machine_depth": {
-            "default_value": 190
-        },
-        "machine_height": {
-            "default_value": 210
-        },
-        "machine_heated_bed": {
-            "default_value": true
-        },
+    "overrides":
+	{
+        "machine_name":					{ "default_value": "HyperCube Evolution" },
+
+        "machine_width":				{ "default_value": 190 },
+        "machine_depth":				{ "default_value": 190 },
+        "machine_height":				{ "default_value": 210 },
+
         "machine_head_with_fans_polygon":
-        {
-            "default_value": [
+		{ 
+			"default_value": [
                 [ -28, -34 ],
                 [ 28, -34 ],
                 [ 28, 67 ],
                 [ -28, 67 ]
-            ]
-        },
-        "machine_center_is_zero": {
-            "default_value": false
-        },
-        "gantry_height": {
-            "value": "135"
-        },
-        "machine_use_extruder_offset_to_offset_coords": {
-            "default_value": true
-        },
-        "machine_gcode_flavor": {
-            "default_value": "RepRap (RepRap)"
-        },
-        "machine_disallowed_areas": {
-            "default_value": []
-        },
-        "machine_nozzle_tip_outer_diameter": {
-            "default_value": 1
-        },
-        "machine_nozzle_head_distance": {
-            "default_value": 3
-        },
-        "machine_max_feedrate_x": {
-            "default_value": 100
-        },
-        "machine_max_feedrate_y": {
-            "default_value": 100
-        },
-        "machine_max_feedrate_z": {
-            "default_value": 3
-        },
-		"machine_max_feedrate_e": {
-            "default_value": 20
-        },
-        "machine_acceleration": {
-            "default_value": 500
-        },		
-        "material_print_temperature": {
-            "minimum_value": "0"
-        },
-        "material_bed_temperature": {
-            "minimum_value": "0",
-            "maximum_value_warning": "125"
-        },
-        "material_bed_temperature_layer_0":
-        {
-            "maximum_value_warning": "120"
-        },
-        "material_standby_temperature": {
-            "minimum_value": "0"
-        },
-        "extruder_prime_pos_y":
-        {
-            "minimum_value": "0",
-            "maximum_value": "machine_depth"
-        },
-        "extruder_prime_pos_x":
-        {
-            "minimum_value": "0",
-            "maximum_value": "machine_width"
-        },
-        "relative_extrusion":
-        {
-            "value": false,
-            "enabled": false
-        }
+            ]},
+        "gantry_height":					{ "value": "135" },
+
+        "machine_gcode_flavor":				{ "default_value": "RepRap (RepRap)" },
+
+        "machine_max_feedrate_x":			{ "value": 500 },
+        "machine_max_feedrate_y":			{ "value": 500 },
+        "machine_max_feedrate_z":			{ "value": 5 },
+        "machine_max_feedrate_e":			{ "value": 30 },
+
+        "machine_max_acceleration_x":		{ "value": 500 },
+        "machine_max_acceleration_y":		{ "value": 500 },
+        "machine_max_acceleration_z":		{ "value": 20 },
+        "machine_max_acceleration_e":		{ "value": 5000 },
+        "machine_acceleration":				{ "value": 500 },
+
+        "machine_max_jerk_xy":				{ "value": 15 },
+        "machine_max_jerk_z":				{ "value": 1 },
+        "machine_max_jerk_e":				{ "value": 5 },
+
+        "machine_heated_bed":				{ "default_value": true },
+
+        "material_diameter":				{ "default_value": 1.75 },
+
+        "acceleration_print":				{ "value": 500 },
+        "acceleration_travel":				{ "value": 500 },
+        "acceleration_travel_layer_0":		{ "value": "acceleration_travel" },
+        "acceleration_roofing":				{ "enabled": "acceleration_enabled and roofing_layer_count > 0 and top_layers > 0" },
+
+        "jerk_print":						{ "value": 10 },
+        "jerk_travel":						{ "value": "jerk_print" },
+        "jerk_travel_layer_0":				{ "value": "jerk_travel" },
+
+        "acceleration_enabled":				{ "value": false },
+        "jerk_enabled":						{ "value": false },
+
+        "speed_print":						{ "value": 60.0 } ,
+        "speed_infill":						{ "value": "speed_print" },
+        "speed_wall":						{ "value": "speed_print * 0.8" },
+        "speed_wall_0":						{ "value": "speed_wall * 0.75" },
+        "speed_wall_x":						{ "value": "speed_wall" },
+        "speed_topbottom":					{ "value": "speed_print * 0.5" },
+        "speed_roofing":					{ "value": "speed_topbottom" },
+        "speed_travel":						{ "value": "speed_print * 2.5" },
+        "speed_layer_0":					{ "value": "speed_print * 0.4" },
+        "speed_print_layer_0":				{ "value": "speed_layer_0" },
+        "speed_travel_layer_0":				{ "value": "speed_layer_0 * 5" },
+        "speed_prime_tower":				{ "value": "speed_topbottom" },
+        "speed_support":					{ "value": "speed_wall_0" },
+        "speed_support_interface":			{ "value": "speed_topbottom" },
+        "speed_z_hop":						{ "value": 5 },
+		
+		"xy_offset_layer_0":				{ "value": -0.1 },
+		"adhesion_type":					{ "value": "'skirt'" },
+		
+		"retraction_hop_enabled":			{ "value": "False" },
+        "retraction_hop":					{ "value": 0.2 },
+        "retraction_combing":				{ "value": "'off' if retraction_hop_enabled else 'noskin'" },
+        "retraction_combing_max_distance":	{ "value": 30 },
+        "travel_avoid_other_parts":			{ "value": true },
+        "travel_avoid_supports":			{ "value": true },
+        "travel_retract_before_outer_wall":	{ "value": true },
+        
+        "retraction_enable":				{ "value": true },
+        "retraction_count_max":				{ "value": 90 },
+        "retraction_extrusion_window":		{ "value": 10 },
+        "retraction_min_travel":			{ "value": 1.5 },
+
+		"infill_pattern":					{ "value": "'grid'" },
+		"infill_sparse_density":			{ "value": 15 },
+		"inset_direction":					{ "value" : "'inside_out'" },
+		"optimize_wall_printing_order":		{ "value": true }
     }
 }
